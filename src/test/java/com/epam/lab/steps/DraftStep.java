@@ -9,8 +9,8 @@ import lab.businessobjects.gmail.GmailLoginBO;
 import lab.utils.PropertyReader;
 import lab.utils.WebDriverUtils;
 
-public class DrfatStep {
-    final GmailDraftsBO draftsBO = new GmailDraftsBO();
+public class DraftStep {
+    final private GmailDraftsBO draftsBO = new GmailDraftsBO();
     final private GmailLoginBO loginBO = new GmailLoginBO();
 
     @Given("^I login into gmail\\.com by \"([^\"]*)\" and \"([^\"]*)\"$")
