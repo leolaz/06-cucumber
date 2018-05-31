@@ -2,7 +2,6 @@ package lab.decorator;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
 
 import java.util.Arrays;
 import java.util.List;
@@ -25,11 +24,6 @@ public class PageElement implements WebElement {
     public void click() {
         System.out.println("Click on [" + name + "]");
         webElement.click();
-    }
-
-    public void textOfElementShouldBeEqualTo(String text) {
-        Assert.assertEquals(getText(), text, "Text of element [" + name + "] does not match");
-
     }
 
     public void submit() {
